@@ -3,7 +3,7 @@
 The program converts assembly code to hexadecimal.
 
 ---
-In order to run this program, you need to type some commands.
+In order to run this program, you need to type some commands to command line.
 
 * First, type the following command to compile the program:
 ```
