@@ -83,7 +83,6 @@ public class AssemblyToHex {
                     System.exit(1);
                 }
                 writer.write(binaryToHexString(binary) + "\n");
-                System.out.println(binaryToHexString(binary));
             }
             writer.close();
         } catch (IOException e) {
