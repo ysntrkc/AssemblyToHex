@@ -73,11 +73,11 @@ public class AssemblyToHex {
                 } else if (opcode.equals("LD")) {
                     String secondPart[] = isa[1].split(",");
                     String dst = secondPart[0], address = secondPart[1];
-                    binary += "100" + registerToBinString(dst) + toBinary(Integer.parseInt(address), 11);
+                    binary += "100" + registerToBinString(dst) + "0" + toBinary(Integer.parseInt(address), 10);
                 } else if (opcode.equals("ST")) {
                     String secondPart[] = isa[1].split(",");
                     String src = secondPart[0], address = secondPart[1];
-                    binary += "101" + registerToBinString(src) + toBinary(Integer.parseInt(address), 11);
+                    binary += "101" + registerToBinString(src) + "0" + toBinary(Integer.parseInt(address), 10);
                 } else {
                     System.out.println("Error: Invalid opcode!");
                     System.exit(1);
